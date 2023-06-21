@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(bg.jpg);
+    background-position: center;
+}
+nav{
+    /* width: 85%; */
+    /* margin: auto;
+    padding: 35px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #f2f2f2;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    list-style-type: none;
+}
+.title{
+    font-size: larger;
+    color: #783d19;
+    margin: 0 20px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li a{
+    display: block;
+    color: #783d19;
+    text-align: center;
+    padding: 6px 12px;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+}
+nav ul li a:hover:not(.active) {
+    background-color: #8c857d;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #783d19;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    background-color: #fff;
+    color: #5c9197;
+}
+#gallery{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    background-color: #fff;
+    color: #5c9197;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.flag{
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    float: left;
+    width: 250px;
+}
+.flag:hover{
+    border: 1px solid #777;
+}
+.flag img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* padding: 5px; */
+    /* border: 1px solid #ccc; */
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+#Indonesia{
+    color: #8c857d;
+    background-color: #efcdcc;
+
+}
+#India{
+    color: #ad6f74;
+    background-color: #adbf8d;
+}
+#Japan{
+    color: #8c857d;
+    background-color: #d9b29c;
+}
+#Australia{
+    color: #ad6f74;
+    background-color: #bbd9ba;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    background-color: #acd2dd;
+    padding: 50px;
+}
+.grid-item{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
